@@ -21,28 +21,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-dT-rdt">
-                                <rect key="frame" x="164" y="100" width="200" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-dT-rdt">
+                                <rect key="frame" x="87.5" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U60-Jx-2eA">
-                                <rect key="frame" x="164" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U60-Jx-2eA">
+                                <rect key="frame" x="87.5" y="230" width="200" height="100"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIs-3w-bdl">
-                                <rect key="frame" x="164" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIs-3w-bdl">
+                                <rect key="frame" x="87.5" y="360" width="200" height="100"/>
+                                <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Awm-dT-rdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="05h-bM-11I"/>
+                            <constraint firstItem="U60-Jx-2eA" firstAttribute="top" secondItem="Awm-dT-rdt" secondAttribute="bottom" constant="30" id="4tI-fJ-fLW"/>
+                            <constraint firstItem="jIs-3w-bdl" firstAttribute="top" secondItem="U60-Jx-2eA" secondAttribute="bottom" constant="30" id="LKW-It-VnK"/>
+                            <constraint firstItem="jIs-3w-bdl" firstAttribute="centerX" secondItem="U60-Jx-2eA" secondAttribute="centerX" id="LMV-Zy-xv9"/>
                             <constraint firstItem="Awm-dT-rdt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Wo6-oy-TVz"/>
+                            <constraint firstItem="U60-Jx-2eA" firstAttribute="centerX" secondItem="Awm-dT-rdt" secondAttribute="centerX" id="rPA-qN-U9f"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xbR-B9-0Cb"/>
+                    <connections>
+                        <outlet property="button1" destination="Awm-dT-rdt" id="8nv-LZ-QeA"/>
+                        <outlet property="button2" destination="U60-Jx-2eA" id="lL6-5J-8oT"/>
+                        <outlet property="button3" destination="jIs-3w-bdl" id="1dm-KC-VBN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
