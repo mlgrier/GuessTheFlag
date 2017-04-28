@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,6 +24,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awm-dT-rdt">
                                 <rect key="frame" x="87.5" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Awm-dT-rdt" secondAttribute="height" multiplier="2:1" id="JrQ-g1-zHK"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVJ-IF-2Yh"/>
@@ -30,6 +34,10 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U60-Jx-2eA">
                                 <rect key="frame" x="87.5" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U60-Jx-2eA" secondAttribute="height" multiplier="2:1" id="AIQ-Hj-tUt"/>
+                                    <constraint firstAttribute="width" secondItem="U60-Jx-2eA" secondAttribute="height" multiplier="2:1" id="fVv-XQ-1vu"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opd-B7-lRN"/>
@@ -37,6 +45,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIs-3w-bdl">
                                 <rect key="frame" x="87.5" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jIs-3w-bdl" secondAttribute="height" multiplier="2:1" id="M2P-Ft-VkQ"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9i-Xr-hhu"/>
@@ -47,9 +58,12 @@
                         <constraints>
                             <constraint firstItem="Awm-dT-rdt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="05h-bM-11I"/>
                             <constraint firstItem="U60-Jx-2eA" firstAttribute="top" secondItem="Awm-dT-rdt" secondAttribute="bottom" constant="30" id="4tI-fJ-fLW"/>
+                            <constraint firstItem="U60-Jx-2eA" firstAttribute="height" secondItem="Awm-dT-rdt" secondAttribute="height" id="JTB-HJ-gkB"/>
                             <constraint firstItem="jIs-3w-bdl" firstAttribute="top" secondItem="U60-Jx-2eA" secondAttribute="bottom" constant="30" id="LKW-It-VnK"/>
                             <constraint firstItem="jIs-3w-bdl" firstAttribute="centerX" secondItem="U60-Jx-2eA" secondAttribute="centerX" id="LMV-Zy-xv9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="jIs-3w-bdl" secondAttribute="bottom" constant="20" id="TqK-x1-Isk"/>
                             <constraint firstItem="Awm-dT-rdt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Wo6-oy-TVz"/>
+                            <constraint firstItem="jIs-3w-bdl" firstAttribute="height" secondItem="U60-Jx-2eA" secondAttribute="height" id="pZP-6K-bxf"/>
                             <constraint firstItem="U60-Jx-2eA" firstAttribute="centerX" secondItem="Awm-dT-rdt" secondAttribute="centerX" id="rPA-qN-U9f"/>
                         </constraints>
                     </view>
